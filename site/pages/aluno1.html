@@ -4,52 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filme favorito</title>
+    <style>
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .galeria img {
+            width: 32%;
+            max-width: 700px;
+            height: auto;
+        }
+        .formulario {
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+        }
+      </style>
 </head>
 <body>
     <header>
-        <img src="/home/isaac/exercicio-paginas-multiplas-grupo-6/site/resources/img/posterclimax.jpg" alt="Imagem não disponível" style="width: 100%; display: block;" height="600">
+        <img id="topo" src="site/resources/img/aluno1/poster/posterclimax.jpg" alt="Imagem não disponível/Pôster do filme" style="width: 100%; display: block;" height="600">
+        <hr>
         <h1>CLIMAX</h1>
-        <p>Climax (2018), de Gaspar Noé, é um thriller psicológico que acompanha um grupo de dançarinos durante uma celebração isolada que rapidamente sai do controle. Após consumirem uma sangria misteriosamente adulterada com algum tipo de alucinógeno, a atmosfera festiva dá lugar a um mergulho vertiginoso em delírios, caos e paranoia. Sem saber o que é real ou imaginado, os personagens enfrentam uma noite em que tudo pode acontecer — e nada é o que parece. Com uma narrativa intensa e visualmente hipnótica, o filme explora os limites da mente humana em um ambiente claustrofóbico e perturbador.</p>
-        <p>Escolhi Climax por ser uma obra totalmente fora do convencional — um filme que não apenas se assiste, mas se sente. Ele oferece uma experiência sensorial intensa, marcada por uma estética imagética singular e um trabalho sonoro poderoso, que conduz o espectador pelos estados emocionais e psíquicos dos personagens. O trabalho com sons e imagens retrata com sensibilidade as alterações na percepção e no comportamento dos personagens, refletindo estados mentais e emocionais que oscilam entre o êxtase e o caos. É uma viagem cinematográfica intimista e perturbadora, feita para causar desconforto, estranhamento e até repulsa, como se o próprio espectador também estivesse preso naquele delírio coletivo. Além disso, a dança — tradicionalmente vista como uma forma de libertação — aqui assume um papel ambíguo: é ao mesmo tempo arte e fuga, mas também um prenúncio do colapso. A atmosfera de paranoia e desespero que domina o grupo torna o filme ainda mais fascinante, revelando sua força como um retrato sensorial dos limites da mente humana.</p>
+        <hr>
+        <p><em>Climax</em> (2018), de <strong>Gaspar Noé</strong>, é um <strong>thriller psicológico</strong> que acompanha um grupo de dançarinos durante uma celebração isolada que rapidamente sai do controle. Após consumirem uma sangria misteriosamente adulterada com algum tipo de alucinógeno, a atmosfera festiva se transforma em um mergulho vertiginoso em <em>delírios</em>, <em>caos</em> e <em>paranoia</em>. Sem saber o que é real ou imaginado, os personagens enfrentam uma noite em que <strong>tudo pode acontecer</strong> — e <strong>nada é o que parece</strong>. Com uma narrativa <em>intensa</em> e visualmente <em>hipnótica</em>, o filme explora os limites da mente humana em um ambiente <em>claustrofóbico</em> e <em>perturbador</em>.</p>
+        <p>Escolhi <em>Climax</em> por ser uma obra totalmente <strong>fora do convencional</strong> — um filme que <strong>não apenas se assiste, mas se sente</strong>. Ele oferece uma <strong>experiência sensorial intensa</strong>, marcada por uma estética imagética <em>singular</em> e um trabalho sonoro <em>poderoso</em>, que conduz o espectador pelos <em>estados emocionais e psíquicos</em> dos personagens. O trabalho com sons e imagens retrata com sensibilidade as <em>alterações na percepção</em> e no comportamento dos personagens, refletindo estados mentais e emocionais que oscilam entre o <em>êxtase</em> e o <em>caos</em>. É uma <strong>viagem cinematográfica</strong> <em>intimista</em> e <em>perturbadora</em>, feita para causar <em>desconforto</em>, <em>estranhamento</em> e até <em>repulsa</em>, como se o próprio espectador também estivesse preso naquele <strong>delírio coletivo</strong>. Além disso, a <strong>dança</strong> — tradicionalmente vista como uma forma de <em>libertação</em> — aqui assume um papel <strong>ambíguo</strong>: é ao mesmo tempo arte e fuga, mas também um <em>prenúncio do colapso</em>. A atmosfera de <em>paranoia</em> e <em>desespero</em> que domina o grupo torna o filme ainda mais fascinante, revelando sua força como um <strong>retrato sensorial dos limites da mente humana</strong>.</p>
         <br>
         <hr>
     </header>
 
     <section>
         <h2>FICHA TÉCNICA</h2>
+        <hr>
         <dl>
             <dt><b>Direção</b></dt>
-            <dd></dd>
+            <dd>Gaspar Noé</dd>
             <dt><b>Ano de lançamento</b></dt>
-            <dd></dd>
+            <dd>2018</dd>
             <dt><b>Gênero(s)</b></dt>
-            <dd></dd>
+            <dd>Drama, Terror, Thriller psicológico</dd>
+            <dt><b>Duração</b></dt>
+            <dd>97 minutos</dd>
         </dl>
     </section>
     <hr>
 
     <section>
         <h2>GALERIA DE IMAGENS</h2>
-        <table>
-            <tr>
-              <td><img src="img/cena1.jpg" alt="Cena 1" width="300"></td>
-              <td><img src="img/cena2.jpg" alt="Cena 2" width="300"></td>
-              <td><img src="img/cena3.jpg" alt="Cena 3" width="300"></td>
-            </tr>
-            <tr>
-              <td><img src="img/cena4.jpg" alt="Cena 4" width="300"></td>
-              <td><img src="img/cena5.jpg" alt="Cena 5" width="300"></td>
-              <td><img src="img/cena6.jpg" alt="Cena 6" width="300"></td>
-            </tr>
-          </table>
+        <hr>
+        <div class="galeria">
+            <img src="site/resources/img/aluno1/galeria/climax1.jpg" alt="Imagem não disponível/Imagem 1">
+            <img src="site/resources/img/aluno1/galeria/climax2.jpg" alt="Imagem não disponível/Imagem 2">
+            <img src="site/resources/img/aluno1/galeria/climax3.jpg" alt="Imagem não disponível/Imagem 3">
+            <img src="site/resources/img/aluno1/galeria/climax4.jpg" alt="Imagem não disponível/Imagem 4">
+            <img src="site/resources/img/aluno1/galeria/climax5.jpg" alt="Imagem não disponível/Imagem 5">
+            <img src="site/resources/img/aluno1/galeria/climax6.jpg" alt="Imagem não disponível/Imagem 6">
+            <img src="site/resources/img/aluno1/galeria/climax7.jpg" alt="Imagem não disponível/Imagem 7">
+            <img src="site/resources/img/aluno1/galeria/climax8.jpg" alt="Imagem não disponível/Imagem 8">
+            <img src="site/resources/img/aluno1/galeria/climax9.jpg" alt="Imagem não disponível/Imagem 9">
+            <img src="site/resources/img/aluno1/galeria/climax10.jpg" alt="Imagem não disponível/Imagem 10">
+            <img src="site/resources/img/aluno1/galeria/climax11.jpg" alt="Imagem não disponível/Imagem 11">
+            <img src="site/resources/img/aluno1/galeria/climax12.jpg" alt="Imagem não disponível/Imagem 12">
+        </div>
         <br>
     </section>
     <hr>
 
     <section>
         <h2>TRILHA SONORA</h2>
+        <hr>
         <audio src="" controls loop></audio>
-        <p>Trecho de explicação sobre a trilha sonora</p>
+        <p><strong>Climax</strong> uma trilha sonora <em>marcante</em>, composta por faixas de vários artistas do cenário eletrônico, mas não há exatamente uma única música tema oficial. No entanto, a música que mais se destaca e funciona como um <em>"tema não-oficial"</em> é <strong>"Supernature"</strong> de <strong>Cerrone</strong>. A faixa abre o filme com uma coreografia e já estabelece o <em>tom hipnótico e estranho</em> da narrativa. Com uma batida disco e ao mesmo tempo sombria, <strong>"Supernature"</strong> cria um contraste entre o ritmo dançante e a sensação de algo inquietante prestes a acontecer. É uma escolha musical que prepara o espectador para a <em>espiral de tensão</em> que se desenrola em seguida.</p>
     </section>
     <hr>
 
@@ -64,37 +94,57 @@
                 <th><h3>Papel no elenco</h3></th>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td colspan="2"><img src="/home/isaac/exercicio-paginas-multiplas-grupo-6/site/resources/img/aluno1/tabela/sofia.jpg" alt="Elenco 1" width="100" style="vertical-align: middle; margin-right: 10px;">
+                <strong><a href="https://www.imdb.com/pt/name/nm1154749/?ref_=tt_cst_t_1">Sofia Boutella</a></strong></td>
+                <td>Selva</td>
+                <td>Protagonista</td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-
+                <td colspan="2"><img src="/home/isaac/exercicio-paginas-multiplas-grupo-6/site/resources/img/aluno1/tabela/romain.jpg" alt="Elenco 2" width="100" style="vertical-align: middle; margin-right: 10px;">
+                <strong><a href="https://www.imdb.com/pt/name/nm8273848/?ref_=tt_cst_t_2">Romain Guillermic</a></strong></td>
+                <td>David</td>
+                <td>Antagonista</td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td colspan="2"><img src="/home/isaac/exercicio-paginas-multiplas-grupo-6/site/resources/img/aluno1/tabela/thea.jpg" alt="Elenco 3" width="100" style="vertical-align: middle; margin-right: 10px;">
+                <strong><a href="https://www.imdb.com/pt/name/nm9835810/?ref_=tt_cst_t_8">Thea Carla Schott</a></strong></td>
+                <td>Psyche</td>
+                <td>Coadjuvante</td>
+            </tr>
+            <tr>
+                <td colspan="2"><img src="/home/isaac/exercicio-paginas-multiplas-grupo-6/site/resources/img/aluno1/tabela/kiddy.jpg" alt="Elenco 4" width="100" style="vertical-align: middle; margin-right: 10px;">
+                <strong><a href="https://www.imdb.com/pt/name/nm8156298/?ref_=tt_cst_t_4">Kiddy Smile</a></strong></td>
+                <td>Daddy</td>
+                <td>Coadjuvante</td>
+            </tr>
+            <tr>
+                <td colspan="2"><img src="/home/isaac/exercicio-paginas-multiplas-grupo-6/site/resources/img/aluno1/tabela/claudeemmanuelle.jpg" alt="Elenco 5" width="100" style="vertical-align: middle; margin-right: 10px;">
+                <strong><a href="https://www.imdb.com/pt/name/nm9850520/?ref_=tt_cst_t_5">Claude Gajan Maude</a></strong></td>
+                <td>Emmanuelle</td>
+                <td>Coadjuvante</td>
+            </tr>
+            <tr>
+                <td colspan="2"><img src="/home/isaac/exercicio-paginas-multiplas-grupo-6/site/resources/img/aluno1/tabela/giselle.jpg" alt="Elenco 6" width="100" style="vertical-align: middle; margin-right: 10px;">
+                <strong><a href="https://www.imdb.com/pt/name/nm14511172/?ref_=tt_cst_t_6">Giselle Palmer</a></strong></td>
+                <td>Gazelle</td>
+                <td>Coadjuvante</td>
             </tr>
         </table>
         <br>
         <hr>
     </section>
 
-    <section>
-        <h2>ENVIE SUA OPINIÃO</h2>
-        <a href="">adicionar formulário</a>
+    <section class="formulario">
+        <h3>ENVIE SUA OPINIÃO</h3>
+        <p>Que tal compartilhar <strong>sua opinião</strong> sobre o filme? Preencha o formulário "<em>Envie sua opinião!</em>" com seu nome, e-mail, uma nota de 1 a 5 e, se desejar, deixe um comentário opcional.</p>
+        <a href="site/pages/formularioaluno1.html">Envie sua opinião</a>
     </section>
     <br>
     <hr>
     <footer>
-        <p>Parágrafo de agradecimento</p>
+        <p><strong>Obrigado por ler a página! Volte sempre que precisar!</strong></p>
+        <p><strong>Autor da página:</strong> Isaac S. Kozuchovski</p>
+        <a href="#topo">Voltar ao topo</a>
     </footer>
 </body>
 
