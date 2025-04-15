@@ -5,31 +5,39 @@
     <title>Envie sua opinião</title>
 </head>
 
-<body>
-    <h1>Envie sua opinião</h1>
+<body bgcolor="#e0e0e0">
+
+    <header></header>
+        <h1>Envie sua opinião</h1>
+    </header>
     <hr>
+
     <form>
         <section>
+            <h3>Nome:</h3>
             <label>
-                <h3>Nome:</h3> <input type="text" name="nome">
+                <input type="text" name="nome">
             </label>
             <br>
             <hr>
+            <h3>Email:</h3>
             <label>
-                <h3>Email:</h3> <input type="email" name="email">
+                <input type="email" name="email">
             </label>
             <br>
             <hr>
+            <h3>Escreva um comentário sobre o filme (opcional):</h3>
             <label>
-                <h3>Escreva um comentário sobre o filme (opcional):</h3> <textarea name="comentário"></textarea>
+                <textarea name="comentário"></textarea>
             </label>
         </section>
         <br>
         <hr>
         
         <section>
+            <h3>Deixe uma nota de 1 a 5 para o filme:</h3>
             <label>
-                <h3>Deixe uma nota de 0 a 10 para o filme:</h3> <input type="number" id="nota" name="nota" min="0" max="10">
+                <input type="number" id="nota" name="nota" min="1" max="5">
             </label>
         </section>
         <hr>
